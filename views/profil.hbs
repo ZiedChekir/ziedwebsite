@@ -1,0 +1,26 @@
+<div  >
+    <h4>You are logged in</h4>
+    <!-- <div class="row">
+      <div class="col-md-6">
+        <h3>Profile</h3>
+        <img [src]="profile.picture" alt="" class="profile-img">
+        <p><strong>Name: </strong> {{profile.name}}</p>
+        <p><strong>Email: </strong> {{profile.email}}</p>
+        <p><strong>Nickname: </strong> {{profile.nickname}}</p>
+        <p><strong>Created At: </strong> {{profile.created_at}}</p>
+        <p><strong>Updated At: </strong> {{profile.updated_at}}</p>
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Profile</h3>
+        <img  alt="" class="profile-img">
+        <p><strong>Name: </strong> {{authService.userProfile.name}}</p>
+        <p><strong>Email: </strong> {{authService.userProfile.email}}</p>
+        <p><strong>Nickname: </strong> {{authService.userProfile.nickname}}</p>
+        <p><strong>Created At: </strong> {{authService.userProfile.created_at}}</p>
+        <p><strong>Updated At: </strong> {{authService.userProfile.updated_at}}</p>
+      </div>
+    </div>
+  </div>
+  <h4 >You are not logged in, please click 'Log in' button to login</h4>

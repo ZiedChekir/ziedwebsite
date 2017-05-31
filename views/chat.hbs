@@ -1,0 +1,36 @@
+<link rel="stylesheet" type="text/css" href="/stylesheets/chat.css">
+<div class="row">
+  <div class="col-md-4 user-window well">
+  <h1>connected users</h1>
+    <ul>
+      <li *ngFor="let user of users">{{user}}</li>
+    </ul>
+  </div>
+  <div class="col-md-8 ">
+    <div class="well chat-window">
+      <h1>chat window</h1>
+      <ul>
+        <li *ngFor="let message of messages">
+        <span class="username"><strong>{{message.username}}</strong></span>
+        <span class="message">{{message.message}}</span>
+        <span class="time">{{message.time}}</span>
+        <span class="alert">{{message.alert}}</span></li>
+      </ul>
+
+    </div>
+  
+    <div class="input-group">
+     
+      <input type="text" name="msg" autocomplete="off"  class="form-control" placeholder="hey Chat with ur friends">
+       <span class="input-group-btn">
+        <button  type="submit" class="btn btn-primary" >Go!</button>
+      </span>
+    </div><!-- /input-group -->
+
+  </div>
+
+  
+
+</div>
+
+

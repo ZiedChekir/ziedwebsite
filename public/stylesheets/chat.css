@@ -1,0 +1,31 @@
+.chat-window{
+
+  height: 60vh;
+ overflow-y: scroll;
+
+ color:black;
+ font-size: 20px;
+ font-family: sans-serif;
+}
+.user-window{
+ height: 60vh;
+ overflow-y: scroll;
+
+ color:black;
+ font-size: 20px;
+ font-family: sans-serif;
+ 
+}
+.text-input{
+  width: 500px;
+background-color: grey;
+color: white;
+}
+.alert{
+	color:red;
+}
+.time{
+	color:grey;
+	font-size:13px;
+
+}
